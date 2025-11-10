@@ -18,7 +18,7 @@ section {
     --open-font: 'Open Sans', sans-serif;
     --first-shadow: -3.828px -3.828px 6px 0px rgba(255, 200, 39, 0.4), 3px 5px 8px 0px rgba(255, 82, 1, 0.2);
     --hover-shadow: 11px 11px 32px rgba(255, 82, 1, 0.2), -11px -11px 32px rgba(255, 200, 39, 0.4);
-    --slide-shadow:-3.828px -3.828px 6px 0px rgba(255, 200, 39, 0.4), 3px 5px 8px 0px rgba(255, 82, 1, 0.2);
+    --slide-shadow: -3.828px -3.828px 6px 0px rgba(255, 200, 39, 0.4), 3px 5px 8px 0px rgba(255, 82, 1, 0.2);
 }
 
 .navbar {
@@ -151,25 +151,34 @@ section {
 
 .abt-game {
     position: relative;
+    z-index: 8;
 }
 
 .abt-type {
+    position: relative;
     box-shadow: var(--first-shadow);
     transition: all 0.2s linear;
     border-radius: 8px;
+    background-image: url(../image/card-bg.png);
+    background-size: cover;
+    padding: 35px 40px;
+}
+
+.abt-type::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #350b2d;
+    opacity: 0.7;
+    z-index: 5;
+    top: 0;
+    left: 0;
 }
 
 .abt-type:hover {
     box-shadow: var(--hover-shadow);
     cursor: pointer;
-}
-
-.abt-game {
-    position: relative;
-    border-radius: 8px;
-    background-image: url(../image/card-bg.png);
-    background-size: cover;
-    padding: 35px 40px;
 }
 
 .abt-game p {
@@ -221,11 +230,28 @@ section {
 }
 
 .sign-page {
-    /* background-image: url(../image/bg-3.jpeg); */
-    background-color: var(--dark-color);
-    padding: 90px 0;
+    position: relative;
     width: 100%;
+    padding: 90px 0;
+    background-image: url(../image/bg-3.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
 }
+
+.sign-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-color);
+    opacity: 0.9;
+    z-index: 2;
+}
+
 
 .abt-win p {
     font-size: 18px;
@@ -298,27 +324,29 @@ section {
     border: none !important;
     box-shadow: none !important;
 }
-.accordion-button:focus{
+
+.accordion-button:focus {
     color: var(--main-color);
     background-color: var(--dark-color);
     border-color: var(--main-color);
-    box-shadow: var(--first-shadow); 
+    box-shadow: var(--first-shadow);
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: var(--dark-color);               
+    background-color: var(--dark-color);
     box-shadow: none;
-    border: none;    
+    border: none;
 }
 
-.accordion-header .accordion-button{
+.accordion-header .accordion-button {
     border-radius: 0 !important;
 }
 
 /* Swiper CSS */
-.slide-page{
+.slide-page {
     background-color: var(--dark-color);
 }
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -334,43 +362,33 @@ section {
     align-items: center;
 }
 
-.swiper-slide{
-    box-shadow: var(--slide-shadow);
-
-}
-.swiper-slide p{
+.swiper-slide p {
     color: var(--second--color);
 }
 
-.swiper-slide i{
+.swiper-slide i {
     color: var(--main-color);
     font-size: 50px;
 }
 
-.know-slide p{
+.know-slide p {
     color: var(--second--color);
 }
 
-.men-text h6{
+.men-text h6 {
     color: var(--main-color);
 }
 
-.man-img{
-    background-color: var(--dark-color);
-    border-radius: 50%;
+.slide-img img {
+    width: 50%;
 }
 
-.man-img img{
-    border-radius: 50%;
-    width: fit-content;
-}
-
-.foot-page{
+.foot-page {
     background-color: var(--dark-color);
     position: relative;
 }
 
-.foot-back{
+.foot-back {
     background-image: url(../image/A3-image.png);
     position: absolute;
     background-size: cover;
@@ -380,11 +398,23 @@ section {
     right: 0;
 }
 
-.foot-item{
+.foot-item {
     font-size: 18px;
     transition: all 0.2s linear;
 }
 
-.foot-item:hover{
+.foot-item:hover {
     color: var(--main-color) !important;
+}
+
+.men-win img{
+    background-color: var(--main-color);
+}
+
+.men-win{
+    box-shadow: var(--first-shadow);
+}
+
+.win-page{
+    background-color: var(--dark-color);
 }
