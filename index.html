@@ -24,11 +24,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
-    <!-- Media CSS -->
-    <link rel="stylesheet" href="./assets/css/media.css">
-
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Media CSS -->
+    <!-- <link rel="stylesheet" href="./assets/css/media.css"> -->
 
 </head>
 
@@ -51,9 +51,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link position-relative" href="#">Game</a>
-                        <span class="position-absolute top-0 badge rounded-pill bg-warning text-black"> New
+                    <li class="nav-item  position-relative">
+                        <a class="nav-link" href="#">Game</a>
+                        <span class="position-absolute top-0 end-0 badge rounded-pill bg-warning text-black"> New
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">FAQ</a>
@@ -90,21 +90,18 @@
             <div class="row gy-4 align-items-center justify-content-center">
                 <div class="col-lg-6">
                     <div class="abt-home">
-                        <div class="home-itm">
+                        <div class="home-itm text-center text-lg-start">
                             <h1 class="text-white fw-bolder lh-base">
                                 Play <span>Online Casino</span> & Build For Practice
                             </h1>
                             <p class="fs-4">
                                 PLAY CASINO AND EARN CRYPTO IN ONLINE. THE ULTIMATE ONLINE CASINO PLATFORM.
                             </p>
-                            <a href="">
-                                <button class="fs-3 grp-btn rounded-2 me-3 mt-5"><i class="ri-play-mini-line"></i>Play
-                                    Now</button>
-                            </a>
-
-                            <a href="">
-                                <button class="fs-3 grp-btn rounded-2 mt-5">Sign Up</button>
-                            </a>
+                            <div class="btns pt-4">
+                                <a class="fs-3 grp-btn rounded-2 me-3 mt-5"><i class="ri-play-mini-line"></i>Play
+                                    Now</a>
+                                <a class="fs-3 grp-btn rounded-2 mt-5">Sign Up</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -469,8 +466,11 @@
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="abt-login">
                             <div class="abt-profile">
-                                <div class="pro-icon text-center">
+                                <div class="pro-icon text-center position-relative">
                                     <i class="ri-user-6-line"></i>
+                                    <span class="position-absolute top-0 fs-5 translate-middle p-2 bg-warning  rounded-circle">
+                                        1
+                                    </span>
                                 </div>
                                 <h4 class="text-white text-center">
                                     Sign Up First & Login
@@ -704,38 +704,79 @@
 
     <section class="win-page">
         <div class="container">
-            <div class="row">
-                <div class="col-4">
+            <div class="row align-items-center justify-content-center flex-column flex-lg-row">
+                <div class="col-lg-4">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="men-win">
-                                    <img src="./assets/image/man1.png" alt="man1">
-                                </div>
-                                <!-- <span class="bottom-0 text-black translate-middle badge rounded-pill bg-warning">
-                                    $50
-                                </span> -->
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="men-win">
-                                    <img src="./assets/image/man2.png" alt="man2">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="men-win">
-                                    <img src="./assets/image/man3.png" alt="man3">
+                                    <img src="./assets/image/man1.png" alt="man1" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $50
+                                    </span>
+                                    <h5 class="text-white d-block">
+                                        Rafuj Raihan
+                                    </h5>
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
                                 <div class="men-win">
-                                    <img src="./assets/image/man2.png" alt="man2">
+                                    <img src="./assets/image/man2.png" alt="man2" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $150
+                                    </span>
+                                    <h5 class="text-white">
+                                        Rafuj Raihan
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="men-win">
+                                    <img src="./assets/image/man3.png" alt="man3" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $270
+                                    </span>
+                                    <h5 class="text-white">
+                                        Rafuj Raihan
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="men-win">
+                                    <img src="./assets/image/man2.png" alt="man2" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $52000
+                                    </span>
+                                    <h5 class="text-white">
+                                        Rafuj Raihan
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="men-win">
+                                    <img src="./assets/image/man2.png" alt="man2" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $52000
+                                    </span>
+                                    <h5 class="text-white">
+                                        Rafuj Raihan
+                                    </h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="last-winner">
                         <div class="first-win text-center justify-content-center align-items-center">
                             <h2 class="text-white mt-4">
@@ -754,27 +795,71 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="men-win">
-                                    <img src="./assets/image/man1.png" alt="man1">
+                                    <img src="./assets/image/man1.png" alt="man1" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $50
+                                    </span>
+                                    <h5 class="text-white">
+                                        Rafuj Raihan
+                                    </h5>
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
                                 <div class="men-win">
-                                    <img src="./assets/image/man2.png" alt="man2">
+                                    <img src="./assets/image/man2.png" alt="man2" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $150
+                                    </span>
+                                    <h5 class="text-white">
+                                        Rafuj Raihan
+                                    </h5>
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
                                 <div class="men-win">
-                                    <img src="./assets/image/man3.png" alt="man3">
+                                    <img src="./assets/image/man3.png" alt="man3" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $270
+                                    </span>
+                                    <h5 class="text-white">
+                                        Rafuj Raihan
+                                    </h5>
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
                                 <div class="men-win">
-                                    <img src="./assets/image/man2.png" alt="man2">
+                                    <img src="./assets/image/man2.png" alt="man2" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $52000
+                                    </span>
+                                    <h5 class="text-white">
+                                        Rafuj Raihan
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="men-win">
+                                    <img src="./assets/image/man2.png" alt="man2" class="position-relative">
+                                    <span
+                                        class="win-badge position-absolute text-black translate-middle badge rounded-pill bg-warning">
+                                        $52000
+                                    </span>
+                                    <h5 class="text-white">
+                                        Rafuj Raihan
+                                    </h5>
                                 </div>
                             </div>
                         </div>
@@ -816,9 +901,9 @@
                                 <img src="./assets/image/man1.png" alt="man1" class="rounded-circle bg-warning">
                             </div>
                             <div class="men-text">
-                                <span class="text-white">
+                                <h6 class="text-white">
                                     Suraiya Nesa
-                                </span>
+                                </h6>
                                 <h6>
                                     Top Pocker
                                 </h6>
@@ -836,9 +921,9 @@
                                 <img src="./assets/image/man2.png" alt="man2" class="rounded-circle bg-warning">
                             </div>
                             <div class="men-text">
-                                <span class="text-white">
+                                <h6 class="text-white">
                                     Suraiya Nesa
-                                </span>
+                                </h6>
                                 <h6>
                                     Top Pocker
                                 </h6>
@@ -856,9 +941,9 @@
                                 <img src="./assets/image/man3.png" alt="man3" class="rounded-circle bg-warning">
                             </div>
                             <div class="men-text">
-                                <span class="text-white">
+                                <h6 class="text-white">
                                     Suraiya Nesa
-                                </span>
+                                </h6>
                                 <h6>
                                     Top Pocker
                                 </h6>
@@ -876,9 +961,9 @@
                                 <img src="./assets/image/man1.png" alt="man1" class="rounded-circle bg-warning">
                             </div>
                             <div class="men-text">
-                                <span class="text-white">
+                                <h6 class="text-white">
                                     Suraiya Nesa
-                                </span>
+                                </h6>
                                 <h6>
                                     Top Pocker
                                 </h6>
@@ -903,15 +988,18 @@
                     <li><a class="foot-item text-decoration-none text-white" href="#">Privacy Policy</a></li>
                 </ul>
             </div>
+            <div class="foot-back d-none d-md-block"></div>
+        </div>
+        <div class="foot-border"></div>
+        <div class="container">
             <div class="text-center fs-5">
                 <p class="text-white d-inline-block">
                     Copyrights © 2021 All Rights Reserved by
                 </p>
-                <span class="text-warning m-0">
-                    Viserlab
+                <span class="text-warning">
+                    Power Star
                 </span>
             </div>
-            <div class="foot-back d-none d-md-block"></div>
         </div>
     </section>
     <!-- Bootstrap JS -->
@@ -925,25 +1013,28 @@
             slidesPerView: 3,
             spaceBetween: 30,
             loop: true,
-            autoplay: { delay: 2500, disableOnInteraction: false },
+            // autoplay: { delay: 2500, disableOnInteraction: false },
             breakpoints: {
-                340: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 }
+                300: { slidesPerView: 2 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                
             }
         });
-    </script>
 
-    <script>
         var swiper2 = new Swiper(".secondSwiper", {
             slidesPerView: 3,
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                300: { slidesPerView: 1 },
+                576: { slidesPerView: 3 },
+                768: { slidesPerView: 3 }
             }
         });
-
     </script>
 </body>
 

@@ -71,7 +71,7 @@ section {
 }
 
 .home-itm h1 {
-    font-size: 70px;
+    font-size: clamp(1.875rem, 4.9vw, 4.375rem);
 }
 
 .home-itm p {
@@ -83,15 +83,23 @@ section {
     color: var(--main-color);
 }
 
+.btns a {
+    color: black;
+    text-decoration: none;
+}
+
 .grp-btn {
+    padding: 
+    clamp(10px, 2.22vw, 20px)
+    clamp(10px, 2.22vw, 20px) !important;
     background-color: var(--main-color);
     box-shadow: var(--first-shadow);
     transition: all 0.2s linear;
-    padding: 13px 35px !important;
     border: none;
 }
 
 .grp-btn:hover {
+    cursor: pointer;
     box-shadow: var(--hover-shadow);
 }
 
@@ -392,7 +400,6 @@ section {
     background-color: var(--dark-color) !important;
 }
 
-
 .accordion-header .accordion-button {
     border-radius: 0 !important;
 }
@@ -435,10 +442,6 @@ section {
     align-items: center;
 }
 
-.light-bg{
-    background-color: var(--light-color);
-}
-
 .slide-border{
     border: 1px solid var(--main-color);
 }
@@ -452,12 +455,49 @@ section {
     font-size: 50px;
 }
 
-.know-slide p {
-    color: var(--second--color);
+.men-win {
+    position: relative;
+    padding: 8px 0; 
+    width: 140px;
+    margin: auto;
+}
+
+.men-win {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: var(--first-shadow);
+    padding: 8px; 
+}
+
+.men-win img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.win-badge {
+    bottom: -23px;
+    left: 50%;
+    padding: 5px 15px;
+    overflow: visible;
+    font-weight: 500 !important;
+    box-shadow: var(--first-shadow);
 }
 
 .men-text h6 {
     color: var(--main-color);
+}
+
+.light-bg{
+    background-color: var(--light-color);
+}
+
+.know-slide p {
+    color: var(--second--color);
 }
 
 .slide-img img {
@@ -485,7 +525,6 @@ section {
     z-index: -1;
 }
 
-
 .foot-back {
     background-image: url(../image/A3-image.png);
     position: absolute;
@@ -493,6 +532,7 @@ section {
     background-position: center;
     width: 210px;
     height: 240px;
+    z-index: 5;
     bottom: 0;
     right: 0;
 }
@@ -504,29 +544,6 @@ section {
 
 .foot-item:hover {
     color: var(--main-color) !important;
-}
-
-.men-win {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 10px;
-    padding: 8px;
-    box-shadow: var(--first-shadow);
-}
-
-.swiper-slide span{
-    position: absolute;
-}
-
-.men-win img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    background-color: var(--main-color);
 }
 
 .win-page {
@@ -560,4 +577,10 @@ section {
 
 .first-win button:hover{
     box-shadow: var(--hover-shadow);
+}
+
+.foot-border{
+    border: 1px solid var(--second--color);
+    margin: 10px 0;
+    opacity: 0.5;
 }
